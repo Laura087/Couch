@@ -73,6 +73,10 @@ public class GameController{
 		return result;
 	}
 	
+	public boolean hasControl(){
+		return (cont != null);
+	}
+	
 	public boolean poll(){
 		return cont.poll();
 	}

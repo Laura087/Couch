@@ -69,7 +69,7 @@ public class Couch {
 	}
 	
 	public boolean hasController(){
-		return !(controller == null);
+		return (controller.hasControl());
 	}
 	
 	private int[] convertIntArray(JSONArray array){
