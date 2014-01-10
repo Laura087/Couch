@@ -4,6 +4,8 @@ import java.io.FileNotFoundException;
 public class Main {
 	public static void main(String[] args) throws FileNotFoundException {
 		Couch couch = new Couch();
-		couch.run();
+//		if(couch.hasController()){
+			couch.run();
+//		}
 	}
 }

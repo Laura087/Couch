@@ -62,7 +62,14 @@ public class Couch {
 		if (DEBUG_ON){
 			screen.printLine(controlDebug);
 		}
+		if (controlDebug.startsWith("Error")){
+			screen.printLine("Controller Initialisation Error");
+		}
 		screen.updateWheelData(wheels.getVels(), wheels.getStates());
+	}
+	
+	public boolean hasController(){
+		return !(controller == null);
 	}
 	
 	private int[] convertIntArray(JSONArray array){
